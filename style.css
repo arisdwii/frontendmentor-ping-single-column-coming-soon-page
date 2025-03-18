@@ -1,0 +1,233 @@
+:root {
+  /* Primary */
+  --pblue: hsl(223, 87%, 63%);
+  /* Secondary */
+  --spale-blue: hsl(223, 100%, 88%);
+  --slight-red: hsl(354, 100%, 66%);
+  /* Neutral */
+  --ngray: hsl(0, 0%, 59%);
+  --nvery-dark-blue: hsl(209, 33%, 12%);
+  --nwhite: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--nwhite);
+  color: var(--nvery-dark-blue);
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  min-width: 280px;
+  max-width: 375px;
+  margin: auto;
+  padding: 12px;
+  font-size: 0.8rem;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+header a img {
+  width: 50px;
+}
+
+main {
+  flex: 1;
+  text-align: center;
+}
+
+main .heading h1 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.heading h1 span {
+  font-weight: 700;
+}
+
+main .success-msg {
+  color: green;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+main form {
+  width: 100%;
+  max-width: 300px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form .email-form input {
+  width: 100%;
+  padding: 14px 28px;
+  border: 1px solid var(--ngray);
+  border-radius: 100px;
+  outline: none;
+}
+
+form .email-form.error input {
+  border-color: var(--slight-red);
+}
+
+form .email-form.error p {
+  color: var(--slight-red);
+  margin-top: 0.4em;
+  font-style: italic;
+  display: block;
+}
+
+main form button {
+  padding: 14px 28px;
+  background-color: var(--pblue);
+  color: var(--nwhite);
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  box-shadow: hsla(223, 87%, 63%, 0.25) 0px 13px 27px -5px,
+    hsla(223, 87%, 63%, 0.3) 0px 8px 16px -8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+main form button:hover {
+  background-color: var(--spale-blue);
+  box-shadow: none;
+}
+
+main img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+footer nav a {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--ngray);
+  color: var(--pblue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+footer nav a:hover {
+  border-color: var(--pblue);
+  background-color: var(--pblue);
+  color: var(--nwhite);
+}
+
+footer p {
+  margin-top: 16px;
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: underline;
+}
+
+footer p a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  header a img {
+    width: 60px;
+  }
+
+  main .heading h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+  }
+
+  main .success-msg {
+    margin-top: 20px;
+  }
+
+  main form {
+    max-width: 440px;
+    align-items: start;
+    flex-direction: row;
+    margin: 28px auto;
+  }
+
+  main .email-form {
+    width: 65%;
+  }
+
+  form .email-form.error p {
+    font-size: 0.7rem;
+    text-align: left;
+    margin-left: 28px;
+  }
+
+  main form button {
+    width: 35%;
+  }
+
+  main img {
+    margin-top: 10px;
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+
+  main .heading h1 {
+    font-size: 1.9rem;
+  }
+
+  main form {
+    max-width: 500px;
+  }
+
+  form .email-form input {
+    padding: 12px 24px;
+  }
+
+  main form button {
+    padding: 12px 24px;
+  }
+
+  main img {
+    margin: 10px 0;
+  }
+}

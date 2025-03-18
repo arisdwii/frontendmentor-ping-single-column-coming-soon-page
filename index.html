@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ping. - we are launching soon!">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <a href="/" aria-label="go to homepage">
+      <img src="images/logo.svg" alt="Ping.">
+    </a>
+  </header>
+
+  <main class="container">
+    <div class="heading">
+      <h1>We are launching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+    </div>
+
+    <p class="success-msg" aria-live="polite"></p>
+
+    <form>
+      <div class="email-form">
+        <input type="email" name="email" id="email" placeholder="Your email address..." aria-describedby="email-error"
+          required>
+        <p class="error-msg" aria-live="polite"></p>
+      </div>
+
+      <button type="submit">Notify Me</button>
+    </form>
+
+    <img src="images/illustration-dashboard.png" alt="Dashboard illustration showing upcoming features">
+  </main>
+
+  <footer class="container">
+    <nav aria-label="social media links">
+      <!-- Link to facebook -->
+      <a href="https://facebook.com" aria-label="facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+        </svg>
+      </a>
+
+      <!-- Link to X -->
+      <a href="https://x.com" aria-label="x">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 14 14">
+          <g fill="none">
+            <g clip-path="url(#primeTwitter0)">
+              <path fill="currentColor"
+                d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z" />
+            </g>
+            <defs>
+              <clipPath id="primeTwitter0">
+                <path fill="#fff" d="M0 0h14v14H0z" />
+              </clipPath>
+            </defs>
+          </g>
+        </svg>
+      </a>
+
+      <!-- Link to Instagram -->
+      <a href="https://instagram.com" aria-label="instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+        </svg>
+      </a>
+    </nav>
+
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        aria-label="go to frontend mentor website">Frontend Mentor</a>.
+      Coded by <a href="#" aria-label="go to aris website">Your Name Here</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
