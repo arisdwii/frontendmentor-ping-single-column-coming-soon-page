@@ -7,6 +7,15 @@ const errorMsg = document.querySelector(".error-msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  // Check if the email input is empty
+  if (inputEmail.value === "") {
+    // Show error message and highlight input field
+    emailForm.classList.add("error");
+    errorMsg.innerText = "Whoops! It looks like you forgot to add your email";
+    // Stop the function here to prevent further code execution
+    return;
+  }
+
   // Regex for email validation (checks common email formats)
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
